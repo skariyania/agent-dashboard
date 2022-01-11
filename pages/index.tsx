@@ -41,6 +41,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const callDurationArray: number[] = [];
   callDurationArray.push(callDurationResult.data.minimum, callDurationResult.data.maximum)
 
+  // update below line with dynamic input from user to make filters work
   const callFilter = await getStaticCallFilter(["Janet Nelson", "Wayne Brown"], [24, 25]);
 
   return {
